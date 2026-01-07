@@ -2,6 +2,9 @@ const express = require('express');
 const app = express();
 const PORT = 8080;
 
+// Importing the service layer and assigning it to the IMCcalculator const.
+const IMCcalculator = require('./functions/imc-calculator')
+
 app.get('/', (req, res) => {
 
   const weight = parseFloat(req.query.weight);
@@ -11,8 +14,7 @@ app.get('/', (req, res) => {
     return res.send('Please submit valid weight and height values ​​as query parameters!');
   }
 
-  const imc = weight / (height * height);
-
+  let imc = IMCcalculator.performIMCCalculation(weight, height)
 
   // Response in JSON
   res.json(
