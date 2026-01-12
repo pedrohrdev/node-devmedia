@@ -45,6 +45,60 @@ app.get('/historicoIPCA/id/:id', (req, res) => {
 
 
 
+// The fourty route should return a readjustment calculation
+app.get('/reajuste', (req, res) => {
+
+    const { valor, mesInicial, anoInicial, mesFinal, anoFinal } = req.query;
+
+    if (!valor || !mesInicial || !anoInicial || !mesFinal || !anoFinal) {
+        return res.status(404).json({erro: 'Todos os parametros devem ser numeros basicos'})
+    }
+
+    const valorNum = Number(valor);
+    const mesIni = Number(mesInicial);
+    const anoIni = Number(anoInicial);
+    const mesFim = Number(mesFinal);
+    const anoFim = Number(anoFinal);        
+
+if (isNaN(valorNum) || isNaN(mesIni) || isNaN(anoIni) || isNaN(mesFim) || isNaN(anoFim)) {
+        return res.status(400).json({ erro: 'Todos os parâmetros devem ser números válidos' });
+    }
+
+    if (mesIni < 1 || mesIni > 12 || mesFim < 1 || mesFim > 12) {
+        return res.status(400).json({ erro: 'Meses devem estar entre 1 e 12' });
+    }
+
+    if (anoIni > anoFim || (anoIni === anoFim && mesIni > mesFim)) {
+        return res.status(400).json({ erro: 'Data inicial deve ser anterior ou igual à data final' });
+    }
+
+    let resultado = valorNum;
+
+    for (let ano = anoIni; ano <= anoFim; ano++) {
+        const mesStart = (ano === anoIni) ? mesIni : 1;
+        const mesEnd = (ano === anoFim) ? mesFim : 12;
+
+        for (let mes = mesStart; mes <= mesEnd; mes++) {
+            const registro = historicoInflacao.find(r => r.ano === ano && r.mes === mes);
+            
+            if (registro) {
+                resultado *= (1 + (registro.ipca / 100));
+            } else {
+                console.warn(`IPCA não encontrado para ${mes}/${ano} - ignorando`);
+            }
+        }
+    }
+
+    res.json({
+        valorOriginal: valorNum,
+        periodo: `${mesInicial}/${anoInicial} → ${mesFinal}/${anoFinal}`,
+        valorReajustado: Number(resultado.toFixed(2)),
+        fatorAcumulado: Number((resultado / valorNum).toFixed(4))
+    });
+
+})
+
+
 app.listen(8080, () => {
     console.log('API runing on port 8080')
 })  
