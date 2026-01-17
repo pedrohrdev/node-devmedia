@@ -24,6 +24,15 @@ Studies and exercises from the DevMedia basic Node.js course (early 2026)
 - I studied the theory of SQL and practiced by doing 20 exercises on it.
 - Tomorrow will be a productive day.
 
-## 📅 Progress 13/01
+## 📅 Progress 14/01
 -- Today I practiced what I learned about SQL yesterday.
 -- I did 75 SQL exercises and learned new commands, and I'll practice them tomorrow.
+
+## 📅 Progress 14/01
+-- I learned and practiced some new SQL commands.
+
+## 📅 Progress 15/01
+Busy day, I didn't get to study much, I focused more on English today, but I did study a little about SQL.
+
+## 📅 Progress 16/01 
+-- Today I wasn't able to study, I wasn't home.
