@@ -36,3 +36,6 @@ Busy day, I didn't get to study much, I focused more on English today, but I did
 
 ## 📅 Progress 16/01 
 -- Today I wasn't able to study, I wasn't home.
+
+## 📅 Progress 17/01 - 19/01
+-- I haven't been home these past few days, but I'll be back tomorrow with full focus.
