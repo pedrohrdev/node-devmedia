@@ -1,0 +1,17 @@
+/*
+
+    Daily objective: Review and integrate; combine everything
+    you've learned into a single script, refactor the mini-projects
+    to make them clean and organized.
+
+    This week I understood that functions can be treated as data.
+
+    I learned how to use arrow functions and the importance of keeping the code clean and readable.
+
+    I refactored my mini-projects to make them clearer.
+
+    The hardest part was understanding the behavior of 'this', but now I understand it better.
+
+    Next step: consolidate even more to confidently move into React.
+
+*/
