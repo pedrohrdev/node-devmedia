@@ -3,21 +3,21 @@ Studies and exercises from the DevMedia basic Node.js course (early 2026)
 
 ## 📅 Progress 10/01/2026
 
-- [x] Node.js exercises (40 exercises – DevMedia)
-- [x] Reinforcing concepts: routes, req/res, modules
+--  Node.js exercises (40 exercises – DevMedia)
+--  Reinforcing concepts: routes, req/res, modules
 
 ## 📅 ​​Progress 12/01/2026
 
-- Current status: Finishing Node.js course (DevMedia)
-- Today: Solving exercises and theoretical review
-- Immediate focus:
+-- Current status: Finishing Node.js course (DevMedia)
+-- Today: Solving exercises and theoretical review
+-- Immediate focus:
 
-- Finish current module
+-- Finish current module
 
-- Start database next
-- Starting tomorrow, January 12th, I will focus heavily on studying
+-- Start database next
+-- Starting tomorrow, January 12th, I will focus heavily on studying
 
-🟢 Continuous study, even on busy days.
+-- Continuous study, even on busy days.
 
 ## 📅 Progress 13/01
 
@@ -39,3 +39,6 @@ Busy day, I didn't get to study much, I focused more on English today, but I did
 
 ## 📅 Progress 17/01 - 19/01
 -- I haven't been home these past few days, but I'll be back tomorrow with full focus.
+
+## 📅 Progress 20/01 
+-- Today was a great day, I studied for 6 hours, did 100 SQL exercises, and I'm already integrating my API with a database now.
