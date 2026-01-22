@@ -1,0 +1,16 @@
+{
+  "name": "historical-ipca-api",
+  "version": "1.0.0",
+  "description": "API de dados históricos do IPCA com cálculo de reajuste",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": ["ipca", "reajuste", "api", "node", "express"],
+  "author": "Pedro Rossi",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1" 
+  }
+}
