@@ -45,3 +45,9 @@ Busy day, I didn't get to study much, I focused more on English today, but I did
 
 ## 📅 Progress 25/01 
  --This weekend I couldn't study much, I did some Node exercises, but this last week of the month I'm going to study 10 hours every day.
+
+ ## 📅 Progress 26/01 
+-- Today I studied Node and SQL, integrated my API with the database, and created a registration system. I studied for eight and a half hours and I'm very happy.
+
+ ## 📅 Progress 28/01 
+-- I didn't study much today because the course platform was bugged, but I maintained consistency and studied.
