@@ -1,6 +1,31 @@
 # node-devmedia
 Studies and exercises from the DevMedia basic Node.js course (early 2026)
 
+## CRUD Project (API with database)
+
+- Folder: `/CRUD`
+- Description: Complete CRUD (Create, Read, Update, Delete) implementation for tasks, using Node.js + Express + database (probably SQLite or PostgreSQL via pool).
+
+- Main structure:
+
+- `index.js`: main server
+
+- `routes/taskRoutes.js`: route definition
+
+- `functions/`: operation logic (create, read, update, delete)
+
+- `db/pool.js`: database connection
+
+- How to run:
+
+``bash
+
+cd CRUD
+
+npm install
+
+node index.js
+
 ## 📅 Progress 10/01/2026
 
 --  Node.js exercises (40 exercises – DevMedia)
