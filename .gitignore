@@ -1,4 +1,7 @@
-# Logs
+node_modules/
+node_modul_es/     # se for o nome que você tem
+.env
+*.log# Logs
 logs
 *.log
 npm-debug.log*
